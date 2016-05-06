@@ -224,26 +224,19 @@ img { max-width: 100%; }
 	top: 0;
 	margin: 100px 0 0;
 	bottom: 0;
-	right: 0;
+	right: -400px;
 	height: calc(100vh - 100px);
 	overflow: auto;
 	text-align: left;
 	width: 400px;
 	background: rgba(35, 53, 112, 0.5);
-	z-index: 999;
-	-webkit-transition: transform 0.4s ease;
-	-moz-transition: transform 0.4s ease;
-	transition: transform 0.4s ease;
-	transform: translateX(400px);
-	-webkit-transform: translateX(400px);
-	-moz-transform: translateX(400px);
-	-ms-transform: translateX(400px);
+	z-index: 999 !important;
+	-webkit-transition: right 0.4s ease;
+	-moz-transition: right 0.4s ease;
+	transition: right 0.4s ease;
 }
 .nav-active #nav {
-	transform: translateX(0);
-	-webkit-transform: translateX(0);
-	-moz-transform: translateX(0);
-	-ms-transform: translateX(0);
+	right: 0;
 }
 #nav ul {
 	margin: 0;
@@ -907,7 +900,7 @@ footer {
 	 }
 	 #nav{
 		 width: 200px;
-		 transform: translateX(200px);
+		 right: -200px;
 		 margin: 50px 0 0;
 		 height: calc(100vh - 50px);
 	 }
@@ -916,7 +909,7 @@ footer {
 		 line-height: 16px;
 	 }
 	 .nav-active #nav{
-		 transform: translateX(0);
+		 right: 0;
 	 }
 	 #nav ul{
 		 font-size: 16px;
