@@ -51,13 +51,17 @@ img { max-width: 100%; }
 }
 .nav-active .navbar-header { margin: 0 0 0 -200px;}
 #wrapper {
-	overflow: hidden;
 	position: relative;
 	width:  100%;
 	padding: 100px 0 0;
 	-webkit-transition: margin 0.4s  ease;
 	-moz-transition: margin 0.4s  ease;
 	transition: margin 0.4s  ease;
+}
+#wrapper:after{
+	display: block;
+	clear: both;
+	content: '';
 }
 .nav-active #wrapper {
 	margin: 0 0 0 -400px;
