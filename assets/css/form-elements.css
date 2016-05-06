@@ -103,6 +103,9 @@ input[type="text"]::-webkit-input-placeholder,
     line-height: 44px;
     color: #fff;
     width: 425px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
 }
 button.btn {
     z-index: 1;
