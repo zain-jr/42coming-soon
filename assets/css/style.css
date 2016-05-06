@@ -377,7 +377,7 @@ img { max-width: 100%; }
 }
 .form-top {
 	overflow: hidden;
-	padding: 0 25px 15px 25px;
+	padding: 0 25px;
 	background: rgba(35,53,112,0.5);
 	text-align: left;
 }
@@ -398,9 +398,28 @@ img { max-width: 100%; }
 	text-align: right;
 }
 .form-bottom {
-	padding: 25px 25px 30px 25px;
+	padding: 5px 25px 30px;
 	background: rgba(35,53,112,0.5);
 	text-align: left;
+}
+.form-bottom .input-holder { margin: 0 0 15px;}
+.form-bottom .input-holder .error-state{
+	display: none;
+	color: #ff8260;
+}
+.form-bottom .input-holder.error .error-state{ display: block;}
+.form-bottom .input-holder.error .fake-select:after,
+.form-bottom .input-holder.error .fake-select{
+	border-color: #ff8260;
+}
+.form-bottom .input-holder.error .form-control{
+	border-color: #ff8260;
+	color: #ff8260;
+}
+.form-bottom .input-holder.error input[type="email"]::-moz-placeholder, 
+.form-bottom .input-holder.error input[type="password"]::-moz-placeholder, 
+.form-bottom .input-holder.error input[type="text"]::-moz-placeholder{
+	color: #ff8260 !important;
 }
 .form-bottom form textarea {
 	height: 100px;
