@@ -287,6 +287,26 @@ img { max-width: 100%; }
 .form-box {
 	margin: 80px 0 0;
 }
+.form-box.successfull .form-top,
+.form-box.successfull .form-bottom {
+	display: none;
+}
+.form-box .register-successfully { display: none;}
+.form-box.successfull .register-successfully{
+	background: rgba(35, 53, 112, 0.5);
+	color: #fff;
+	overflow: hidden;
+	padding: 20px;
+	min-height: 500px;
+	padding: 210px 20px;
+	display: block;
+}
+.form-box.successfull .register-successfully h2 {
+	color: #00CC00;
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 52px;
+}
 .top-content .text {
 	padding-top: 120px;
 	color: #fff;
