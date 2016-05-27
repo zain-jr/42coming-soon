@@ -6,8 +6,15 @@ $(document).ready(function(){
     });
 	$(document).on("click",".inner-bg, .form-box",function() {
 		 $('body').removeClass('nav-active');
-	}); 
+	});
+	$(document).on('click', '.close-thankYou', function(){
+		$('body').removeClass('successfull');
+	});
+	setTimeout(function() {
+		$('body').removeClass('successfull');
+	}, 5000);
 });
+
 // page init
 jQuery(function(){
 	initSlideShow();
