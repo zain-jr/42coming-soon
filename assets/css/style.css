@@ -929,6 +929,9 @@ footer {
 		max-width: 320px;
 		margin: 0 auto;
 	}
+	.form-top {
+		padding: 25px 25px 0;
+	}
 	.social-links li{
 		display: block;
 	}

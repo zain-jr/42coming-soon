@@ -12,7 +12,11 @@ $(document).ready(function(){
 	});
 	setTimeout(function() {
 		$('body').removeClass('successfull');
-	}, 5000);
+	}, 10000);
+	
+    if ($(window).width() < 768) {
+		$('.scroll-down')[0].click();	      
+    }
 });
 
 // page init
